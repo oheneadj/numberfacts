@@ -15,7 +15,9 @@ function getNumberFact(){
 
     const url = `http://numbersapi.com/${number}`;
     fetch (url)
-    .then(response => response.text())
+    .then(response => response.text()
+    
+    )
     .then(data => {
         if(number !== '' ){
             factText.innerText = data;
