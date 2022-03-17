@@ -9,17 +9,26 @@
 </head>
 <body>
     <div class="container">
-        <div class="left">
+        <div class="inner-container">
             <h1>Number Fun <span>Facts</span></h1>
-            <p>Bring meaning to your date and stories to any number.<br> Enter any number for an interesting fact.</p>
+            <p>Bring meaning to your <b>date</b> and stories to any number.<br> Enter any number or select any date for an interesting fact.</p>
             <form action="">
-                <input type="number" id="numberInput" placeholder="Enter any number here...">
+                <div class="form-group">
+                <label for="number">Enter any number</label>
+                <input name="number" type="number" id="numberInput" placeholder="Enter any number here...">
+                </div>
+                
                 <span>OR</span>
-                <input type="date" id="dateInput" placeholder="Select any date here...">
-                <!-- <button>Get Facts</button> -->
+                <div class="form-group">
+                <label for="date">Select any date</label>
+                <input name="date" type="date" id="dateInput" placeholder="Select any date here...">
+                </div>
+                <div class="form-group"><br>
+                <a id="random" href="#" class="button">Get Random Facts</a>
+                </div> 
             </form>
         </div>
-        <div class="right">
+        <div class="inner-container">
             <div class="card">
                 <h3>Did You Know?</h3>
                 <p id="factText">Waiting for a random number...</p>
