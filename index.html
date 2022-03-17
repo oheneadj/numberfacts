@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Facts Apps</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Number Fun <span>Facts</span></h1>
+            <p>Bring meaning to your date and stories to any number.<br> Enter any number for an interesting fact.</p>
+            <form action="">
+                <input type="number" id="numberInput" placeholder="Enter any number here...">
+                <span>OR</span>
+                <input type="date" id="dateInput" placeholder="Select any date here...">
+                <!-- <button>Get Facts</button> -->
+            </form>
+        </div>
+        <div class="right">
+            <div class="card">
+                <h3>Did You Know?</h3>
+                <p id="factText">Waiting for a random number...</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
